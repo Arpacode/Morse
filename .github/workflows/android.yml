@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android APK 
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version:'lts/*' 
 
       - name: Install npm packages
         run: npm install
